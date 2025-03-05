@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Registro en Boletín - Cotización</title>
+    <style>
+        :root {
+            --primary: #FB8C23;
+            --secondary: #8D9297;
+            --light: #F8F9FA;
+            --dark: #252222;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: var(--dark);
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            background-color: var(--primary);
+            padding: 15px;
+            text-align: center;
+            color: var(--dark);
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .alert-box {
+            border-left: 4px solid var(--primary);
+            background-color: #FFF4E8;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background-color: #f2f2f2;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 style="margin: 0;">Nuevo Registro en Boletín - Solicitud de Cotización</h2>
+        </div>
+        <div class="content">
+            <div class="alert-box">
+                <p style="margin-top: 0;"><strong>¡Nuevo Registro!</strong> Un cliente se ha registrado en el boletín y desea cotizar.</p>
+            </div>
+
+            <p>El cliente ha proporcionado el siguiente correo electrónico para recibir información sobre cotizaciones:</p>
+
+            <p><strong>Email:</strong> <?php echo $correo; ?></p>
+
+            <p style="margin-top: 20px;">Se recomienda contactar al cliente lo antes posible para ofrecerle una cotización.</p>
+        </div>
+        <div class="footer">
+            <p>© <?php echo date('Y'); ?> Tu Empresa. Este es un mensaje automático del sistema.</p>
+        </div>
+    </div>
+</body>
+</html>

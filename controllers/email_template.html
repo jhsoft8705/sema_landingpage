@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta de Registro - Sema</title>
+    <style>
+        :root {
+            --primary: #FB8C23;
+            --secondary: #8D9297;
+            --light: #F8F9FA;
+            --dark: #252222;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: var(--dark);
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background-color: var(--primary);
+            padding: 15px;
+            text-align: center;
+            color: var(--dark);
+        }
+        
+        .content {
+            padding: 20px;
+        }
+        
+        .alert-box {
+            border-left: 4px solid var(--primary);
+            background-color: #FFF4E8;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        
+        .data-table th {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .data-table td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .footer {
+            background-color: #f2f2f2;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 style="margin: 0;">SEMA - Nueva Solicitud</h2>
+        </div>
+        <div class="content">
+            <div class="alert-box">
+                <p style="margin-top: 0;"><strong>¡Alerta!</strong> Se ha registrado una nueva solicitud en el formulario de contacto.</p>
+            </div>
+            
+            <p>A continuación los datos de la solicitud:</p>
+            
+            <table class="data-table">
+                <tr>
+                    <th>Nombre:</th>
+                    <td><?php echo $nombre; ?></td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td><?php echo $correo; ?></td>
+                </tr>
+                <tr>
+                    <th>Teléfono:</th>
+                    <td><a href="tel:<?php echo $telefono; ?>"><?php echo $telefono; ?></a></td>
+                </tr>
+                <tr>
+                    <th>Servicio:</th>
+                    <td><?php echo $servicio; ?></td>
+                </tr>
+                <tr>
+                    <th>Mensaje:</th>
+                    <td><?php echo $mensaje; ?></td>
+                </tr>
+            </table>
+            
+            <p style="margin-top: 20px;">Se recomienda contactar al cliente lo antes posible.</p>
+        </div>
+        <div class="footer">
+            <p>© <?php echo date('Y'); ?> SEMA. Este es un mensaje automático del sistema.</p>
+        </div>
+    </div>
+</body>
+</html>
