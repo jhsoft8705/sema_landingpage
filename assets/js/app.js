@@ -1,5 +1,4 @@
- 
-
+//form 
 $(document).ready(function () {
   $("#form_contacto").on("submit", function (e) {
     e.preventDefault();
@@ -17,12 +16,12 @@ $(document).ready(function () {
       $("#f_mensaje").val() !== "") {
 
       $("#btnEnviar").prop("disabled", true); // Evita múltiples envíos
- 
-    // Pasando la ruta base de PHP a JavaScript
-    console.log("Enviando a:", BASE_URL + "controllers/ContactoController.php?op=register_contacto");
 
-    console.log(BASE_URL);
-    console.log("hola");
+      // Pasando la ruta base de PHP a JavaScript
+      console.log("Enviando a:", BASE_URL + "controllers/ContactoController.php?op=register_contacto");
+
+      console.log(BASE_URL);
+      console.log("hola");
       // 1️⃣ REGISTRA EL CONTACTO PRIMERO
       $.ajax({
         url: BASE_URL + "/controllers/ContactoController.php?op=register_contacto",
@@ -99,9 +98,9 @@ $(document).ready(function () {
   }
 
 });
- 
- 
-$(document).ready(function () { 
+
+//form
+$(document).ready(function () {
   // Manejar el envío del formulario del boletín
   $("#form_boletin").on("submit", function (e) {
     e.preventDefault();
@@ -203,4 +202,85 @@ $(document).ready(function () {
       }
     });
   }
+});
+
+
+ 
+// Código para insertar el video de fondo en el header
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtener la página actual basada en el atributo aria-current
+    const currentPageItem = document.querySelector('.breadcrumb-item.active');
+    if (!currentPageItem) return;
+    
+    const currentPage = currentPageItem.getAttribute('aria-current');
+    const headerContainer = document.getElementById('page-header-container');
+    
+    // Determinar qué video mostrar según la página
+    let videoSource = '';
+    switch(currentPage) {
+        case 'nosotros':
+            videoSource = '../assets/videos/nosotros.mp4';
+            break;
+        case 'servicios':
+            videoSource = '../assets/videos/servicios.mp4';
+            break;
+        case 'contactanos':
+            videoSource = '../assets/videos/contactanos.mp4';
+            break;
+        default:
+            // Si no es ninguna de las páginas específicas, no hacemos nada
+            return;
+    }
+    
+    // Crear el elemento de video
+    const video = document.createElement('video');
+    video.className = 'page-header-video';
+    video.autoplay = true;
+    video.loop = true;
+    video.muted = true;
+    video.playsInline = true;
+    
+    // Agregar la fuente del video
+    const source = document.createElement('source');
+    source.src = videoSource;
+    source.type = 'video/mp4';
+    video.appendChild(source);
+    
+    // Insertar el video como primer hijo del contenedor
+    headerContainer.insertBefore(video, headerContainer.firstChild);
+    
+    console.log('Video de fondo insertado:', videoSource);
+});
+ 
+
+// Función para cambiar el navbar cuando se hace scroll
+document.addEventListener('DOMContentLoaded', function() {
+  const navbar = document.querySelector('.navbar.sticky-top');
+  const topbar = document.querySelector('.container-fluid.bg-light.p-0.navbar-color-fondo');
+  
+  // Agregar clase 'transparent' al cargar la página
+  navbar.classList.add('transparent');
+  if (topbar) topbar.classList.add('transparent');
+  
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+          // Si el scroll es mayor a 50px, cambiar a negro sólido
+          navbar.classList.remove('transparent');
+          navbar.classList.add('solid');
+          
+          if (topbar) {
+              topbar.classList.remove('transparent');
+              topbar.classList.add('solid');
+          }
+      } else {
+          // Si el scroll es menor a 50px, volver a transparente
+          navbar.classList.add('transparent');
+          navbar.classList.remove('solid');
+          
+          if (topbar) {
+              topbar.classList.add('transparent');
+              topbar.classList.remove('solid');
+          }
+      }
+  });
 });

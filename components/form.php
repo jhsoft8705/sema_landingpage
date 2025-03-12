@@ -6,9 +6,12 @@
                     <div class="border-start border-5 border-primary ps-4 mb-5">
                         <!--<h6 class="text-white text-uppercase mb-2">Appointment</h6>--->
                         <h1 class="display-6 text-white mb-0">Contáctate con nosotros</h1>
+                        <p class="text-white mb-0">COTIZA NUESTROS SERVICIOS</p>
+
                     </div>
-                    <p class="text-white mb-0">COTIZA NUESTROS SERVICIOS</p>
+
                 </div>
+                
                 <div class="col-lg-7 col-md-6 wow fadeIn" data-wow-delay="0.5s">
                     <form id="form_contacto" method="post">
                         <div class="row g-3">

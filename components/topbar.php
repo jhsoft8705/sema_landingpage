@@ -18,20 +18,10 @@
       </div>
       <div class="col-lg-5 px-5 text-end">
         <div class="h-100 d-inline-flex align-items-center">
-          <!--<a class="btn btn-square border-end border-start" href=""><i class="fab fa-facebook-f"></i></a>
-          <a class="btn btn-square border-end" href=""><i class="fab fa-twitter"></i></a>
-          <a class="btn btn-square border-end" href=""><i class="fab fa-linkedin-in"></i></a>
-          <a class="btn btn-square border-end" href=""><i class="fab fa-instagram"></i></a>--->
-
-          <a class="btn btn-square btn-outline-primary me-1" target="_bank"
-            href="https://www.facebook.com/profile.php?id=61572089540527"><i class="fab fa-facebook-f"></i></a>
-          <a class="btn btn-square btn-outline-primary me-1" target="_bank"
-            href="https://www.tiktok.com/@sema_servicioselectricos"><i class="fab fa-youtube"></i></a>
-          <!-- Icono de TikTok -->
-          <!-- Icono de Instagram -->
-          <a class="btn btn-square btn-outline-primary me-1" target="_blank"
-            href="https://www.instagram.com/sema_servicioselectricos/">
-            <i class="fab fa-instagram"></i>
+         <a class="btn btn-square border-end  " target="_blank" href="https://www.facebook.com/profile.php?id=61572089540527"><i class="fab fa-facebook-f"></i></a>
+           <a class="btn btn-square border-end" target="_blank" href="https://www.linkedin.com/company/sema-servicios-el%C3%A9ctricos/?viewAsMember=true"><i class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-square border-end" target="_blank" href="https://vimeo.com/"><i class="fab fa-vimeo-v"></i></a> 
+          <!-- Icono de TikTok --> 
           </a>
         </div>
       </div>

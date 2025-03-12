@@ -15,6 +15,34 @@
 }
 
 
+/*Navbar FIjo*/
+/* Navbar transparente y negro al hacer scroll */
+.navbar.sticky-top.transparent {
+    background-color: rgba(37, 34, 34, 0.5) !important; 
+}
+
+.navbar.sticky-top.solid {
+    background-color: var(--dark) !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Mismo tratamiento para el topbar */
+.container-fluid.bg-light.p-0.navbar-color-fondo.transparent {
+    background-color: rgba(37, 34, 34, 0.5) !important;
+}
+
+.container-fluid.bg-light.p-0.navbar-color-fondo.solid {
+    background-color: var(--dark) !important;
+}
+/* En modo responsive, siempre usar fondo sólido */
+@media (max-width: 991.98px) {
+    .navbar.sticky-top.transparent,
+    .container-fluid.bg-light.p-0.navbar-color-fondo.transparent {
+        background-color: var(--dark) !important;
+    }
+}
+
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -35,10 +63,14 @@
     background:var(--dark) !important; 
    }
 
+
+   
 /*** Button ***/
 .btn {
     font-weight: 500;
     transition: .5s;
+    border-radius: 10px; /* Agregar border-radius aquí */
+
 }
 
 .btn.btn-primary,
@@ -137,105 +169,8 @@
     }
 }
 
+/*Carousel y nabvar transparente*/ 
 
-
-/**Images**/ 
-.rounded-corners{
-    border-radius: 50px !important;  
-    overflow: hidden; /* Asegura que el contenido no se desborde */
-
-  }
-
-  .position-relative.overflow-hidden {
-    border-radius: 50px; /* Coincide con el radio de la imagen */
-    overflow: hidden;
-}
-
-
-
-/*ABOUT*/
- /* Improved image container styling */
-.about-image-container {
-    border-radius: 50px;
-    margin-left:-10px;
-    overflow: hidden;
-  }
-  
-  .about-image-container img {
-    border-radius: 50px !important;
-    transition: all 0.3s ease;
-  }
-  
-  /* Fix responsive issues */
-  @media (max-width: 991.98px) {
-    .about-image-container {
-      min-height: 300px !important;
-      margin-bottom: 30px;
-    }
-    
-    .about-image-container img {
-      position: relative !important;
-      height: 100% !important;
-      width: 100% !important;
-    }
-    
-    .col-lg-6.wow.fadeInUp {
-      padding: 0 15px;
-    }
-    
-    .row.g-5 {
-      margin: 0;
-    }
-  }
-  
-  @media (max-width: 767.98px) {
-    .about-image-container {
-      min-height: 250px !important;
-      padding-left: 15px !important;
-      padding-top: 15px !important;
-    }
-    
-    .col-sm-4.d-flex {
-      margin-bottom: 15px;
-    }
-    
-    .col-sm-4.d-flex h6 {
-      font-size: 14px;
-    }
-  }
-.page-header {
-    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../img/image\ 41.png) center center no-repeat;
-    background-size: cover;
-}
-
-.page-header .breadcrumb-item+.breadcrumb-item::before {
-    color: #999999;
-}
-
-
-/*** Facts ***/
-.facts-overlay {
-    position: absolute;
-    padding: 30px;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: rgba(0, 0, 0, .65);
-}
-
-.facts-overlay h1 {
-    font-size: 120px;
-    color: transparent;
-    -webkit-text-stroke: 2px var(--primary);
-}
-
-.facts-overlay a:hover {
-    color: var(--primary) !important;
-}
 
 /*carousel*//* Asegúrate de que el carrusel tenga un fondo transparente */
 #header-carousel {
@@ -301,41 +236,237 @@
 }
 
 
-/*** Appointment ***/
+
+
+/**Images**/ 
+.rounded-corners{
+    border-radius: 50px !important;  
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+
+  }
+
+  .position-relative.overflow-hidden {
+    border-radius: 50px; /* Coincide con el radio de la imagen */
+    overflow: hidden;
+}
+
+
+/*ABOUT*/
+/* Improved image container styling */
+.about-image-container { 
+    margin-left:-10px;
+    overflow: hidden;
+}
+
+.about-image-container img { 
+    transition: all 0.3s ease;
+}
+
+/* Línea vertical naranja más gruesa */
+.border-start.border-5.border-primary {
+    border-left-width: 6px !important; /* Línea más gruesa */
+    border-left-color: #FF7F00 !important; /* Color naranja */
+}
+
+/* También cambiamos el color de los iconos check para que coincidan */
+.fa-check.text-primary {
+    color: #FF7F00 !important;
+}
+
+/* También cambiamos el color de la línea horizontal superior */
+.border-top {
+    border-top-color: #FF7F00 !important;
+    border-top-width: 5px !important;
+}
+
+/* Fix responsive issues */
+@media (max-width: 991.98px) {
+    .about-image-container {
+        min-height: 300px !important;
+        margin-bottom: 30px;
+    }
+    
+    .about-image-container img {
+        position: relative !important;
+        height: 100% !important;
+        width: 100% !important;
+    }
+    
+    .col-lg-6.wow.fadeInUp {
+        padding: 0 15px;
+    }
+    
+    .row.g-5 {
+        margin: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .about-image-container {
+        min-height: 250px !important;
+        padding-left: 15px !important;
+        padding-top: 15px !important;
+    }
+    
+    .col-sm-4.d-flex {
+        margin-bottom: 15px;
+    }
+    
+    .col-sm-4.d-flex h6 {
+        font-size: 14px;
+    }
+}
+
+
+/*Paginas*/ 
+.page-header {
+    position: relative;
+    overflow: hidden;
+    /* Mantenemos el gradiente oscuro pero quitamos la imagen de fondo */
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65));
+}
+
+.page-header .breadcrumb-item+.breadcrumb-item::before {
+    color: #999999;
+}
+
+/* Aumentar tamaño del texto en el breadcrumb */
+.breadcrumb .breadcrumb-item {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    font-size: 1.25rem;
+}
+
+/* Estilos para el video de fondo */
+.page-header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+
+/* Añade estos estilos a tu CSS para hacer el navbar transparente en páginas con page-header */
+
+/* Estilo para el navbar transparente en páginas con page-header */
+.page-header-present .navbar.sticky-top {
+    background-color: rgba(37, 34, 34, 0.5) !important; /* Fondo semi-transparente */
+    top: 0 !important;
+    z-index: 100 !important;
+    box-shadow: none !important; /* Quita cualquier sombra */
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para el topbar transparente en páginas con page-header */
+.page-header-present .navbar-color-fondo {
+    background-color: rgba(37, 34, 34, 0.5) !important; /* Fondo semi-transparente */
+    transition: background-color 0.3s ease;
+}
+
+/* Ajuste para que el page-header tenga espacio suficiente */
+.page-header {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65));
+    margin-top: -100px; /* Ajusta este valor según la altura de tu navbar */
+    padding-top: 200px !important; /* Añade padding adicional para compensar */
+    z-index: 1;
+}
+
+
+
+
+/*** Facts ***/
+.facts-overlay {
+    position: absolute;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, .65);
+}
+
+.facts-overlay h1 {
+    font-size: 120px;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--primary);
+}
+
+.facts-overlay a:hover {
+    color: var(--primary) !important;
+}
+
+/*** Form ***/ 
 .appointment {
     background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../img/bg.png) center center no-repeat;
     background-size: cover;
 }
 
+/* Estilos para inputs y textareas */
+.appointment .form-control,
+.appointment .form-select {
+    background-color: #bcbcbd !important;
+    border: 0 !important;
+    color: #000 !important;
+}
 
+/* Estilo para placeholder y labels */
+.appointment .form-floating label {
+    color: #000 !important;
+}
+
+/* Estilo para cuando el input está enfocado y el label se mueve */
+.appointment .form-floating>.form-control:focus~label,
+.appointment .form-floating>.form-control:not(:placeholder-shown)~label,
+.appointment .form-floating>.form-select~label {
+    color: #212529 !important; 
+}
+
+/* Estilo para el texto del select */
+.appointment .form-select option {
+    color: #000 !important;
+    background-color: #bcbcbd !important;
+}
+
+ 
 
 /*Index carousel servicios 3*/
 .color-car{
     background: black;
     color: white;
 }
+ 
 
-/*** Team ***/
+
+/*** Team ***/ 
 .team-text {
-    position: absolute;
-    width: 75%;
-    bottom: 30px;
-    left: 0;
     transition: .5s;
+} 
+.team-text h5 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 6px;
 }
 
-.team-item:hover .team-text {
-    width: 100%;
+.team-text span {
+    color: white;
 }
 
-.team-text * {
-    transition: .5s;
-    color:var(--dark)
+.team-item {
+    overflow: hidden;
 }
 
-.team-item:hover .team-text * {
-    letter-spacing: 2px;
-}
 
 
 /*** Testimonial ***/
@@ -370,6 +501,9 @@
     color: #FFFFFF;
     background: var(--primary);
 }
+
+
+/*** Footer ***//*** Footer ***/
 
 
 /*** Footer ***/
@@ -494,41 +628,16 @@
 }
 
 
-
-/*Valores*/
-.gradient-card {
-    background: linear-gradient(180deg, #281908 0%, #995716 50%, #fa8d23 100%);
-    border: none;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-    /* Reducimos el padding para que las tarjetas sean más compactas */
-    padding: 15px;
-}
-
-.gradient-card:hover {
-    transform: translateY(-10px);
-}
-
-.value-icon {
-    width: 70px; /* Reducimos el ancho de las imágenes */
-    height: 80px; /* Reducimos la altura de las imágenes */
-    margin: 15px auto; /* Ajustamos el margen */
-}
-
-.gradient-card h5,
-.gradient-card p {
-    color: white;
-}
-/*end Valores*/
-
-
-/*Servicios carousel*/
  
+
+
+/*Servicios carousel*/ 
 .slider-container {
     position: relative;
     width: 100%;
     max-width: 1200px;
     margin: auto;
+    margin-top:80px;
     overflow: hidden;
 }
 
@@ -551,7 +660,7 @@
 
 .slider-track img {
     width: 100%;
-    max-width: 300px;
+    /*max-width: 300px;*/
     flex-shrink: 0;
     margin-right: 20px;
     cursor: pointer;
@@ -613,6 +722,7 @@
  
 
 
+
 /*contacto*/ 
 .color-n{
     color: black;
@@ -636,12 +746,13 @@
     color: #0d6efd;
 }
  
-
+ 
 
 /*Banner del 1 al 500*/ 
 .banner {
     background-color: #fb8c23; /* Color naranja */
-    height: 70px; /* Altura del banner */
+    height: auto; /* Altura automática para adaptarse al contenido */
+    min-height: 70px; /* Altura mínima del banner */
     width: 100%; /* Ocupa todo el ancho de la pantalla */
     display: flex;
     align-items: center; /* Centra verticalmente el contenido */
@@ -649,9 +760,9 @@
     color: white; /* Texto en blanco */
     font-family: Arial, sans-serif; /* Fuente clara */
     text-align: center; /* Alineación del texto */
-    margin-top: 0; /* Elimina cualquier margen superior */
-    padding: 0; /* Elimina cualquier padding */
-    overflow: hidden; /* Evita que el texto salga del banner */
+    margin-top: -50; /* Elimina cualquier margen superior */
+    padding: 10px; /* Añade padding para evitar que el texto toque los bordes */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
 }
 
 /* Estilo del texto dentro del banner */
@@ -659,16 +770,27 @@
     font-size: 2rem; /* Tamaño del texto */
     font-weight: bold; /* Negrita */
     letter-spacing: 2px; /* Espaciado entre letras */
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    max-width: 90%; /* Evita que el texto sea más grande que el contenedor */
-    overflow: hidden;
-    text-overflow: ellipsis; /* Agrega "..." si el texto es muy largo */
+    max-width: 100%; /* Permite que ocupe todo el ancho disponible */
+    padding: 0 10px; /* Añade espacio a los lados */
 }
 
 /* Ajuste de tamaño del texto en pantallas pequeñas */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .banner-text {
         font-size: 1.5rem;
+        letter-spacing: 1px;
     }
 }
- 
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .banner-text {
+        font-size: 1.2rem;
+        letter-spacing: normal;
+    }
+    
+    .banner {
+        min-height: 60px;
+        padding: 8px;
+    }
+}

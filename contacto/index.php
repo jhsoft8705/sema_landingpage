@@ -7,11 +7,13 @@
 <html lang="en">
 
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
     <title>Contáctanos | SEMA - Cotiza Nuestros Servicios Eléctricos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="cotizar instalación eléctrica, contacto empresa de electricidad, solicitar presupuesto eléctrico, servicio eléctrico en Lima">
-    <meta name="description" content="Solicita una cotización de nuestros servicios eléctricos. En SEMA ofrecemos soluciones en instalación, mantenimiento y seguridad eléctrica.">
+    <meta name="keywords"
+        content="cotizar instalación eléctrica, contacto empresa de electricidad, solicitar presupuesto eléctrico, servicio eléctrico en Lima">
+    <meta name="description"
+        content="Solicita una cotización de nuestros servicios eléctricos. En SEMA ofrecemos soluciones en instalación, mantenimiento y seguridad eléctrica.">
     <meta name="author" content="SEMA Servicios Eléctricos">
     <link rel="canonical" href="<?php echo Conectar::ruta(); ?>/contacto">
 
@@ -33,28 +35,33 @@
     <!-- Navbar End -->
 
 
+
+
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5   wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid page-header py-5  wow fadeIn" data-wow-delay="0.1s" id="page-header-container">
+        <!-- El video se insertará aquí mediante JavaScript -->
         <div class="container text-center py-5">
-            <h1 class="display-4 text-white animated slideInDown mb-4">Contáctanos </h1>
+            <h1 class="display-4 text-white animated slideInDown mb-4">CONTÁCTANOS</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a class="text-white" href="../">Hogar </a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="../">Hogar</a></li>
                     <li class="breadcrumb-item"><a class="text-white">Páginas</a></li>
-                    <li class="breadcrumb-item text-primary active" aria-current="nosotros">Contáctanos</li>
+                    <li class="breadcrumb-item text-primary active" aria-current="contactanos">Contáctanos</li>
                 </ol>
             </nav>
         </div>
     </div>
-
+    <!-- Page Header End -->
 
 
     <!--Mapa-->
     <section class="bg-white w-100">
         <div class="container-xxl py-5">
-            <div class="container">
+            <div class="container mt-3">
                 <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 450px;">
+                    <!-- Mapa - order-2 order-lg-1 lo coloca segundo en móvil, primero en pantallas grandes -->
+                    <div class="col-lg-6 wow fadeInUp order-2 order-lg-1" data-wow-delay="0.1s"
+                        style="min-height: 450px;">
                         <div class="position-relative h-100">
                             <iframe id="location-map" class="position-relative w-100 h-100"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.8184913619043!2d-77.07172133064315!3d-11.992539935340635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce597f1c471f%3A0x9ef23bb221790448!2sZeus%20850%2C%20Lima%2015301!5e0!3m2!1ses-419!2spe!4v1708562374145!5m2!1ses-419!2spe"
@@ -63,7 +70,8 @@
                             </iframe>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <!-- Texto - order-1 order-lg-2 lo coloca primero en móvil, segundo en pantallas grandes -->
+                    <div class="col-lg-6 wow fadeInUp order-1 order-lg-2" data-wow-delay="0.5s">
                         <div class="border-start border-5 border-primary ps-4 mb-5">
                             <h6 class="text-body text-uppercase mb-2">CONTÁCTANOS</h6>
                             <h1 class="display-6 mb-0 color-n">Encuentranos en nuestras 2 sedes</h1>
@@ -166,7 +174,8 @@
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="medidores_luz"
                                                 id="medidores_luz">
-                                            <label class="form-check-label text-white" for="medidores_luz">Instalación de medidores de luz</label>
+                                            <label class="form-check-label text-white" for="medidores_luz">Instalación
+                                                de medidores de luz</label>
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="alarmas_incendios"
@@ -177,7 +186,8 @@
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="pozo_tierra"
                                                 id="pozo_tierra">
-                                            <label class="form-check-label text-white" for="pozo_tierra">Ejecución, medición y certificación de pozo a tierra</label>
+                                            <label class="form-check-label text-white" for="pozo_tierra">Ejecución,
+                                                medición y certificación de pozo a tierra</label>
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="camaras_seguridad"
@@ -187,7 +197,8 @@
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="planos" id="planos">
-                                            <label class="form-check-label text-white" for="planos">Planos eléctricos,sanitarios y de arquitectura</label>
+                                            <label class="form-check-label text-white" for="planos">Planos
+                                                eléctricos,sanitarios y de arquitectura</label>
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="ingenieria"
@@ -217,7 +228,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!--
                            <div class="col-12">
                                 <div class="form-floating">
@@ -246,6 +257,8 @@
     <?php include_once("../components/btn_wspt.php") ?>
 
     <?php include_once("../components/script.php") ?>
+    <script src="../assets/js/app.js"></script>
+
     <script src="contacto.js"></script>
 
 
