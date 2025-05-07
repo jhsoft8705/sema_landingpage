@@ -25,10 +25,7 @@
     <?php include_once("../components/spiner.php") ?>
     <!-- Spinner End -->
 
-
-    <!-- Topbar Start -->
-    <?php include_once("../components/topbar.php") ?>
-
+ 
 
     <!-- Navbar Start -->
     <?php include_once("../components/navbar.php") ?>
@@ -60,7 +57,7 @@
     </div>
 
     <!--opciones-->
-    <div class="container py-5">
+    <div class="container py-5 mt-5">
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <!-- Contenedor principal -->

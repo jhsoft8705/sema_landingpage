@@ -24,10 +24,7 @@
     <?php include_once("../components/spiner.php") ?>
     <!-- Spinner End -->
 
-
-    <!-- Topbar Start -->
-    <?php include_once("../components/topbar.php") ?>
-
+ 
 
     <!-- Navbar Start -->
     <?php include_once("../components/navbar.php") ?>

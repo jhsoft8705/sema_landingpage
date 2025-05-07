@@ -9,13 +9,13 @@
         </div>
         <div class="d-flex justify-content-center pt-2">
           <a class="btn btn-square btn-outline-primary me-1" target="_bank"
-            href="https://www.facebook.com/profile.php?id=61572089540527"><i class="fab fa-facebook-f"></i></a>
+            href=" "><i class="fab fa-facebook-f"></i></a>
           <a class="btn btn-square btn-outline-primary me-1" target="_bank"
-            href="https://www.tiktok.com/@sema_servicioselectricos"><i class="fab fa-youtube"></i></a>
+            href=" "><i class="fab fa-youtube"></i></a>
           <!-- Icono de TikTok -->
           <!-- Icono de Instagram -->
           <a class="btn btn-square btn-outline-primary me-1" target="_blank"
-            href="https://www.instagram.com/sema_servicioselectricos/">
+            href=" ">
             <i class="fab fa-instagram"></i>
           </a>
 
@@ -23,13 +23,13 @@
 
       </div>
       <div class="col-lg-3 col-md-6">
-        <h4 class="text-light mb-4">Sede Los Olivos</h4>
+        <h4 class="text-light mb-4">Sede Lima</h4>
         <div class="contact-info">
-          <p><i class="fa fa-map-marker-alt me-3"></i>Jirón Zeus 850, Los Olivos</p>
+          <p><i class="fa fa-map-marker-alt me-3"></i>Jirón Zeus  , Los Olivos</p>
           <p><i class="fa fa-phone-alt me-3"></i>+51 923 215 106</p>
           <div class="email-wrapper">
             <i class="fa fa-envelope me-3"></i>
-            <span>servicioselectricossema@gmail.com</span>
+            <span> @gmail.com</span>
           </div>
         </div>
 
@@ -39,7 +39,7 @@
           <p><i class="fa fa-phone-alt me-3"></i>+51 9820 689 816</p>
           <div class="email-wrapper">
             <i class="fa fa-envelope me-3"></i>
-            <span>servicioselectricossema@gmail.com</span>
+            <span> @gmail.com</span>
           </div>
         </div>
       </div>
